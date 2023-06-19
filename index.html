@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault();
+            alert("Thank you for supporting us!");
+        }
+        function addToCart() {
+            alert("Your product has been added to the cart.");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>boAt-lifestyle</h1>
+    </header>
+    <marquee behavior="scroll" direction="right" scrollamount="20"><em>“Overall the web is pretty sloppy, but an online store can’t afford to be.”</em></marquee>
+    <main>
+        <header><h1>Our Product</h1></header>
+        <div class="product">
+            <img src="https://media.croma.com/image/upload/v1674054621/Croma%20Assets/Communication/Headphones%20and%20Earphones/Images/246386_0_ddlapw.png" alt="Product Image" width="500" height="600">
+            <h2><strong>boAt Rockerz 450 Marvel Edition Bluetooth Headset</strong></h2>
+            <p></p>
+            <p>₹1799</p>
+            <button class ="button-33" role="button" onclick="addToCart()">Add to Cart</button>
+        </div>
+    </main>
+    <footer>
+        <h2>Contact Us</h2>
+                <form method="post" action="contact.php" onsubmit="showThankYouMessage(event)">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="contact_number" placeholder="Contact Number" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>
