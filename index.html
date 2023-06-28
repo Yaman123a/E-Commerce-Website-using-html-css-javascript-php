@@ -12,6 +12,20 @@
             alert("Your product has been added to the cart.");
         }
     </script>
+    <style>
+         label {
+            float: left;
+        }
+        span {
+            display: block;
+            overflow: hidden;
+            padding: 0px 4px 0px 6px;
+        }
+          
+        input {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,11 +46,20 @@
     <footer>
         <h2>Contact Us</h2>
                 <form method="post" action="contact.php" onsubmit="showThankYouMessage(event)">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="tel" name="contact_number" placeholder="Contact Number" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+                    <span>
+                    <label for="text">Name:</label>
+                <input type="text" name="name" placeholder="e.g Yaman Jain" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="tel">Contact Number:</label>
+                <input type="tel" name="contact_number" placeholder="Contact Number" required>
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </span>
             <input type="submit" value="Submit">
+            <input type="reset">
+
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=900&amp;height=900&amp;hl=en&amp;q=Mumbai&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:900px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:900px;}.gmap_iframe {height:900px!important;}</style></div>
         </form>
     </footer>
 </body>
