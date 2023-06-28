@@ -18,6 +18,7 @@ header, main, footer,marquee,head {
 
 footer {
     background-color: #a59b9b;
+    
 }
 
 input, textarea {
@@ -25,6 +26,15 @@ input, textarea {
     margin: 10px auto;
     padding: 15px 32px;
     width: 300px;
+}
+
+label {
+    display: block;
+    float: left;
+    clear: right;
+    width: 1px; 
+    text-align: left;
+    margin-left: 10px; 
 }
 
 input[type="submit"] {
@@ -41,9 +51,31 @@ input[type="submit"] {
     transition: all 250ms;
     border: 0;
     font-size: 16px;
-    user-select: none;
+    user-select: auto;
     -webkit-user-select: none;
     touch-action: manipulation;
+    text-align: center;
+}
+
+input[type="reset"] {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: auto;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center
+    ;
 }
 
 textarea {
@@ -53,13 +85,7 @@ textarea {
 h1, h2 {
     color: #333;
 }
-button{
-    background-color: #4CAF50;
-    color: white;
-    width: auto;
-    padding: 15px 10px;
-    cursor: pointer;
-}
+
 .button-33 {
   background-color: #c2fbd7;
   border-radius: 100px;
